@@ -21,3 +21,7 @@
     height: 90vh;
     background-size: cover;
 }
+
+h5,p {
+    font-size: 32px;
+}

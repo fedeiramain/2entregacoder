@@ -23,5 +23,57 @@
 }
 
 h5,p {
-    font-size: 32px;
+    font-size: 34px;
+}
+
+.titulo-galeria {
+    font-size: 50px;
+}
+
+/*** animation ***/
+
+h1 {
+    transition: all 1.5s;
+    transition-delay: 0.5s;
+}
+
+.nav-link {
+    transition: all 1.5s;
+}
+
+.card {
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.titulo-galeria {
+    transition: all 1s;
+    animation-name: titulo-galeria-frame;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+
+@keyframes titulo-galeria-frame {
+    25% {
+        color: brown;
+        scale: 1.4;
+    }
+    50% {
+        color: brown;
+        scale: 1.4;
+    }
+    75% {
+        color: brown;
+        scale: 1.4;
+    }
+    100% {
+        color: burlywood;
+        scale: 1.4;
+    }
 }

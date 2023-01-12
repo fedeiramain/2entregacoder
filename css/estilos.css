@@ -7,6 +7,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-image: url("../img/bg-quillen.webp");
+}
+
 .navbar-dark {
     font-size: 30px;
 }

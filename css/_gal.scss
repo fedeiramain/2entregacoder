@@ -1,0 +1,29 @@
+
+.titulo-galeria {
+    font-size: 50px;
+    transition: all 1s;
+    animation-name: titulo-galeria-frame;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+
+
+@keyframes titulo-galeria-frame {
+    25% {
+        color: brown;
+        scale: 1.4;
+    }
+    50% {
+        color: brown;
+        scale: 1.4;
+    }
+    75% {
+        color: brown;
+        scale: 1.4;
+    }
+    100% {
+        color: burlywood;
+        scale: 1.4;
+    }
+}

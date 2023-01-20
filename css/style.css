@@ -1,7 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+::-moz-selection {
+  background-color: brown;
+  color: white;
+}
+
+::selection {
+  background-color: brown;
+  color: white;
+}
+
+body {
+  background-image: url("../img/bg-quillen.webp");
+}
+
 .navbar-dark {
   font-size: 30px;
 }
 
 .active {
   text-decoration: underline;
+}
+
+.nav-link {
+  transition: all 1.5s;
+}
+
+.princ {
+  background-image: url("../img/20180407_1431122.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+
+h5, p {
+  font-size: 34px;
+}
+
+.princ {
+  background-image: url("../img/20180407_1431122.jpg");
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+}
+
+h5, p {
+  font-size: 34px;
+}
+
+.card {
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.btn-primary {
+  background-color: burlywood;
+  color: black;
+}
+
+/*** animation ***/
+h1 {
+  transition: all 1.5s;
+  transition-delay: 0.5s;
+}
+
+.titulo-galeria {
+  font-size: 50px;
+  transition: all 1s;
+  -webkit-animation-name: titulo-galeria-frame;
+          animation-name: titulo-galeria-frame;
+  -webkit-animation-iteration-count: 4;
+          animation-iteration-count: 4;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes titulo-galeria-frame {
+  25% {
+    color: brown;
+    scale: 1.4;
+  }
+  50% {
+    color: brown;
+    scale: 1.4;
+  }
+  75% {
+    color: brown;
+    scale: 1.4;
+  }
+  100% {
+    color: burlywood;
+    scale: 1.4;
+  }
+}
+
+@keyframes titulo-galeria-frame {
+  25% {
+    color: brown;
+    scale: 1.4;
+  }
+  50% {
+    color: brown;
+    scale: 1.4;
+  }
+  75% {
+    color: brown;
+    scale: 1.4;
+  }
+  100% {
+    color: burlywood;
+    scale: 1.4;
+  }
+}
+.historia {
+  margin-top: 15px;
+  padding-inline: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "tar1 tar2" "tar3 tar4" "tar5 tar6";
+  gap: 20px;
+}
+
+.tarjeta1 {
+  grid-area: tar1;
+  width: 100%;
+  font-size: 26px;
+}
+
+.tarjeta2 {
+  grid-area: tar2;
+  width: 100%;
+}
+
+.tarjeta3 {
+  grid-area: tar3;
+  width: 100%;
+}
+
+.tarjeta4 {
+  grid-area: tar4;
+  width: 100%;
+  font-size: 26px;
+}
+
+.tarjeta5 {
+  grid-area: tar5;
+  width: 100%;
+  font-size: 26px;
+}
+
+.tarjeta6 {
+  grid-area: tar6;
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+  .historia {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "tar1" "tar2" "tar4" "tar3" "tar5" "tar6";
+  }
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  gap: 10px;
+}
+.redes a {
+  text-decoration: none;
+}
+.redes a:hover {
+  scale: 1.1;
+}
+.redes .fa-instagram {
+  color: orangered;
+}
+.redes .fa-whatsapp {
+  color: green;
 }/*# sourceMappingURL=style.css.map */

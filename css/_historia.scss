@@ -1,0 +1,60 @@
+.historia {
+    margin-top: 15px;
+    padding-inline: 40px;
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "tar1 tar2"
+    "tar3 tar4"
+    "tar5 tar6";
+    gap: 20px;
+}
+
+.tarjeta1 {
+    grid-area: tar1;
+    width: 100%;
+    font-size: 26px;
+}
+
+.tarjeta2 {
+    grid-area: tar2;
+    width: 100%;
+}
+
+.tarjeta3 {
+    grid-area: tar3;
+    width: 100%;
+}
+
+.tarjeta4 {
+    grid-area: tar4;
+    width: 100%;
+    font-size: 26px;
+}
+
+.tarjeta5 {
+    grid-area: tar5;
+    width: 100%;
+    font-size: 26px;
+}
+
+.tarjeta6 {
+    grid-area: tar6;
+    width: 100%;
+}
+
+@media screen and (max-width:920px) {
+    .historia {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "tar1"
+        "tar2"
+        "tar4"
+        "tar3"
+        "tar5"
+        "tar6";
+    }
+}

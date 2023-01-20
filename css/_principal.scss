@@ -1,0 +1,33 @@
+
+.princ {
+    background-image: url("../img/20180407_1431122.jpg");
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+}
+
+h5,p {
+    font-size: 34px;
+}
+
+.card {
+    transition: transform 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.btn-primary {
+    background-color: burlywood;
+    color: black;
+}
+
+/*** animation ***/
+
+h1 {
+    transition: all 1.5s;
+    transition-delay: 0.5s;
+}
+

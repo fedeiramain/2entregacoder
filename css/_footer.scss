@@ -1,0 +1,22 @@
+.redes {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    gap: 10px;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        scale: 1.1;
+    }
+
+    .fa-instagram {
+        color: orangered;
+    }
+
+    .fa-whatsapp {
+        color: green;
+    }
+}

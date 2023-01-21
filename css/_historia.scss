@@ -1,51 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap');
+
+
 .historia {
     margin-top: 15px;
     padding-inline: 40px;
     width: 100%;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
     "tar1 tar2"
     "tar3 tar4"
-    "tar5 tar6";
+    "tar5 tar6"
+    "tar7 tar8";
     gap: 20px;
+
+
+
+    @mixin texto {
+        width: 100%;
+        font-size: 36px;
+        font-family: 'Pacifico', cursive;
+    }
+
+    @mixin img-histo {
+        width: 100%;
+        border-radius: 5px;
+        -webkit-animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-center .4s cubic-bezier(.39,.575,.565,1.000) both;
+        
+    }
+
+    .tarjeta1 {
+        grid-area: tar1;
+        @include texto;
+    }
+    
+    .tarjeta2 {
+        grid-area: tar2;
+        @include img-histo;
+    }
+    
+    
+    .tarjeta3 {
+        grid-area: tar3;
+        @include img-histo;
+    }
+    
+    .tarjeta4 {
+        grid-area: tar4;
+        @include texto;
+    }
+    
+    .tarjeta5 {
+        grid-area: tar5;
+        @include texto;
+        
+    }
+    
+    .tarjeta6 {
+        grid-area: tar6;
+        @include img-histo;
+    }
+
+    .tarjeta7 {
+        grid-area: tar7;
+        @include img-histo;
+    }
+
+    .tarjeta8 {
+        grid-area: tar8;
+        @include texto;
+        
+    }
+
 }
 
-.tarjeta1 {
-    grid-area: tar1;
-    width: 100%;
-    font-size: 26px;
+
+
+@-webkit-keyframes scale-up-ver-center{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}100%{-webkit-transform:scaleY(1);transform:scaleY(1)}}@keyframes scale-up-ver-center{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4)}100%{-webkit-transform:scaleY(1);transform:scaleY(1)}}
+
+  
+
+/*** media query ***/
+
+@media screen and (max-width:1360px) {
+      .tarjeta1, .tarjeta4, .tarjeta5 {
+        font-size: 26px;
+    }
+    
 }
 
-.tarjeta2 {
-    grid-area: tar2;
-    width: 100%;
-}
-
-.tarjeta3 {
-    grid-area: tar3;
-    width: 100%;
-}
-
-.tarjeta4 {
-    grid-area: tar4;
-    width: 100%;
-    font-size: 26px;
-}
-
-.tarjeta5 {
-    grid-area: tar5;
-    width: 100%;
-    font-size: 26px;
-}
-
-.tarjeta6 {
-    grid-area: tar6;
-    width: 100%;
+@media screen and (max-width:1080px) {
+    .tarjeta1, .tarjeta4, .tarjeta5 {
+      font-size: 22px;
+  }
+  
 }
 
 @media screen and (max-width:920px) {
+    .tarjeta1, .tarjeta4, .tarjeta5 {
+      font-size: 18px;
+  }
+  
+}
+
+@media screen and (max-width:760px) {
     .historia {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
@@ -57,4 +116,15 @@
         "tar5"
         "tar6";
     }
+
+    .tarjeta1, .tarjeta4, .tarjeta5 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .tarjeta1, .tarjeta4, .tarjeta5 {
+      font-size: 24px;
+  }
+  
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,17 +31,6 @@ body {
 
 .nav-link {
   transition: all 1.5s;
-}
-
-.princ {
-  background-image: url("../img/20180407_1431122.jpg");
-  width: 100%;
-  height: 90vh;
-  background-size: cover;
-}
-
-h5, p {
-  font-size: 34px;
 }
 
 .princ {
@@ -130,49 +120,108 @@ h1 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "tar1 tar2" "tar3 tar4" "tar5 tar6";
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "tar1 tar2" "tar3 tar4" "tar5 tar6" "tar7 tar8";
   gap: 20px;
 }
-
-.tarjeta1 {
+.historia .tarjeta1 {
   grid-area: tar1;
   width: 100%;
-  font-size: 26px;
+  font-size: 36px;
+  font-family: "Pacifico", cursive;
 }
-
-.tarjeta2 {
+.historia .tarjeta2 {
   grid-area: tar2;
   width: 100%;
+  border-radius: 5px;
+  -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
-.tarjeta3 {
+.historia .tarjeta3 {
   grid-area: tar3;
   width: 100%;
+  border-radius: 5px;
+  -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
-
-.tarjeta4 {
+.historia .tarjeta4 {
   grid-area: tar4;
   width: 100%;
-  font-size: 26px;
+  font-size: 36px;
+  font-family: "Pacifico", cursive;
 }
-
-.tarjeta5 {
+.historia .tarjeta5 {
   grid-area: tar5;
   width: 100%;
-  font-size: 26px;
+  font-size: 36px;
+  font-family: "Pacifico", cursive;
 }
-
-.tarjeta6 {
+.historia .tarjeta6 {
   grid-area: tar6;
   width: 100%;
+  border-radius: 5px;
+  -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.historia .tarjeta7 {
+  grid-area: tar7;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.historia .tarjeta8 {
+  grid-area: tar8;
+  width: 100%;
+  font-size: 36px;
+  font-family: "Pacifico", cursive;
 }
 
+@-webkit-keyframes scale-up-ver-center {
+  0% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes scale-up-ver-center {
+  0% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/*** media query ***/
+@media screen and (max-width: 1360px) {
+  .tarjeta1, .tarjeta4, .tarjeta5 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .tarjeta1, .tarjeta4, .tarjeta5 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 920px) {
+  .tarjeta1, .tarjeta4, .tarjeta5 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 760px) {
   .historia {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "tar1" "tar2" "tar4" "tar3" "tar5" "tar6";
+  }
+  .tarjeta1, .tarjeta4, .tarjeta5 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .tarjeta1, .tarjeta4, .tarjeta5 {
+    font-size: 24px;
   }
 }
 .redes {

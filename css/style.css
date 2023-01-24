@@ -48,15 +48,13 @@ h5, p {
 .card {
   transition: transform 1s;
 }
-
+.card .btn-primary {
+  background-color: burlywood;
+  color: black;
+}
 .card:hover {
   transform: scale(1.1);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
-
-.btn-primary {
-  background-color: burlywood;
-  color: black;
 }
 
 /*** animation ***/
@@ -210,6 +208,7 @@ h1 {
   font-family: "Pacifico", cursive;
 }
 .titulo-contacto:hover {
+  transition: 0.4s;
   scale: 1.1;
 }
 
@@ -218,6 +217,7 @@ h2, h3 {
   font-family: "Pacifico", cursive;
 }
 h2:hover, h3:hover {
+  transition: 0.4s;
   scale: 1.2;
 }
 

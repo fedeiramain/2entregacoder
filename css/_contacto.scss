@@ -11,8 +11,8 @@
 .titulo-contacto {
     font-size: 46px;
     font-family: 'Pacifico', cursive;
-
     &:hover {
+        transition: 0.4s;
         scale:1.1;
     }
 
@@ -23,6 +23,7 @@ h2, h3 {
     font-family: 'Pacifico', cursive;
 
     &:hover {
+        transition: 0.4s;
         scale:1.2;
     }
 }

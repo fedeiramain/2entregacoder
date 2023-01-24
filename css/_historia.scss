@@ -14,12 +14,13 @@
     "tar5 tar6"
     "tar7 tar8";
     gap: 20px;
+    align-items: center;
+   
 
 
 
     @mixin texto {
         width: 100%;
-        font-size: 36px;
         font-family: 'Pacifico', cursive;
     }
 
@@ -83,48 +84,9 @@
 
 /*** media query ***/
 
-@media screen and (max-width:1360px) {
-      .tarjeta1, .tarjeta4, .tarjeta5 {
-        font-size: 26px;
-    }
-    
-}
-
-@media screen and (max-width:1080px) {
-    .tarjeta1, .tarjeta4, .tarjeta5 {
-      font-size: 22px;
-  }
-  
-}
-
-@media screen and (max-width:920px) {
-    .tarjeta1, .tarjeta4, .tarjeta5 {
-      font-size: 18px;
-  }
-  
-}
-
-@media screen and (max-width:760px) {
+@media (max-width: 1080px) {
     .historia {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas: 
-        "tar1"
-        "tar2"
-        "tar4"
-        "tar3"
-        "tar5"
-        "tar6";
+        display: flex;
+        flex-direction: column;
     }
-
-    .tarjeta1, .tarjeta4, .tarjeta5 {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width:470px) {
-    .tarjeta1, .tarjeta4, .tarjeta5 {
-      font-size: 24px;
-  }
-  
 }

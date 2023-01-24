@@ -123,11 +123,11 @@ h1 {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "tar1 tar2" "tar3 tar4" "tar5 tar6" "tar7 tar8";
   gap: 20px;
+  align-items: center;
 }
 .historia .tarjeta1 {
   grid-area: tar1;
   width: 100%;
-  font-size: 36px;
   font-family: "Pacifico", cursive;
 }
 .historia .tarjeta2 {
@@ -147,13 +147,11 @@ h1 {
 .historia .tarjeta4 {
   grid-area: tar4;
   width: 100%;
-  font-size: 36px;
   font-family: "Pacifico", cursive;
 }
 .historia .tarjeta5 {
   grid-area: tar5;
   width: 100%;
-  font-size: 36px;
   font-family: "Pacifico", cursive;
 }
 .historia .tarjeta6 {
@@ -173,7 +171,6 @@ h1 {
 .historia .tarjeta8 {
   grid-area: tar8;
   width: 100%;
-  font-size: 36px;
   font-family: "Pacifico", cursive;
 }
 
@@ -194,34 +191,10 @@ h1 {
   }
 }
 /*** media query ***/
-@media screen and (max-width: 1360px) {
-  .tarjeta1, .tarjeta4, .tarjeta5 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .tarjeta1, .tarjeta4, .tarjeta5 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 920px) {
-  .tarjeta1, .tarjeta4, .tarjeta5 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 760px) {
+@media (max-width: 1080px) {
   .historia {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "tar1" "tar2" "tar4" "tar3" "tar5" "tar6";
-  }
-  .tarjeta1, .tarjeta4, .tarjeta5 {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 470px) {
-  .tarjeta1, .tarjeta4, .tarjeta5 {
-    font-size: 24px;
+    display: flex;
+    flex-direction: column;
   }
 }
 .redes {

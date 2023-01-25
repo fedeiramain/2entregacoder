@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -195,6 +196,10 @@ h1 {
     flex-direction: column;
   }
 }
+.card-title {
+  font-family: "Pacifico", cursive;
+}
+
 .contacto {
   background-image: url("../img/boat.jpg");
   width: 100%;

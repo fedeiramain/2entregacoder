@@ -200,6 +200,11 @@ h1 {
     flex-direction: column;
   }
 }
+.title-activities {
+  font-family: "Pacifico", cursive;
+  font-size: 42px;
+}
+
 .card-title {
   font-family: "Pacifico", cursive;
 }

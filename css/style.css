@@ -117,6 +117,11 @@ h1 {
     scale: 1.4;
   }
 }
+.title-history {
+  font-family: "Pacifico", cursive;
+  font-size: 46px;
+}
+
 .historia {
   margin-top: 15px;
   padding-inline: 40px;

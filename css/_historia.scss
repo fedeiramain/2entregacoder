@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&display=swap');
 
 .title-history {
-    font-family: 'Pacifico', cursive;
+    font-family: $mainfont;
     font-size: 46px;
 }
 
@@ -25,7 +24,7 @@
 
     @mixin texto {
         width: 100%;
-        font-family: 'Pacifico', cursive;
+        font-family: $mainfont;
     }
 
     @mixin img-histo {
